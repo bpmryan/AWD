@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Signup sheet for todo list -->
+    <form action="https://aw.profbobby.com/api/messages" method="post">
+      <label for="subject">Subject: </label>
+      <input
+        type="text"
+        id="subject"
+        name="subject"
+        placeholder="To do name "
+      />
+
+      <label for="todo">To Do:</label>
+      <textarea
+        name="todo"
+        id="todo"
+        cols="15"
+        rows="5"
+        placeholder="Add the thing you are planning to do "
+      ></textarea>
+
+      <input type="date" name="dateOfEvent" />
+
+      <select name="importance" id="importance">
+        <option value="nah">Nah</option>
+        <option value="maybe">Maybe</option>
+        <option value="yes">Yes</option>
+      </select>
+
+      <select name="decision" id="decision">
+        <optgroup label="Should you">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </optgroup>
+        <optgroup label="Are you sure">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </optgroup>
+      </select>
+      <input
+        type="radio"
+        id="areYouSureSure"
+        value="areYouSureSure"
+        name="areYouSureSure"
+        checked
+      />
+      <label for="areYouSureSure">Yes</label>
+      <input
+        type="radio"
+        id="areYouSureSure"
+        value="areYouSureSure"
+        name="areYouSureSure"
+        checked
+      />
+      <label for="areYouSureSure">No</label>
+
+      <input type="checkbox" id="day" >
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
